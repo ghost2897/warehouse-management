@@ -10,10 +10,13 @@ const pool = mysql.createPool({
   database: process.env.DB_NAME || 'warehouse',
   port: Number(process.env.DB_PORT) || 3306,
   waitForConnections: true,
-  connectionLimit: 20,
-  queueLimit: 0,
-  decimalNumbers: true,
-  dateStrings: true
+ connectionLimit: 20,
+queueLimit: 0,
+decimalNumbers: true,
+dateStrings: true,
+ssl: process.env.DB_SSL === 'true'
+  ? { rejectUnauthorized: false }
+  : undefined
 });
 
 /**
