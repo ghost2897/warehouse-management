@@ -237,7 +237,5 @@ User creates Transfer (Source: W01, Destination: W02, Items: [P01 x 15])
 
 ---
 
-## License & Author
-Built for Enterprise Warehouse Operations on Linux / CachyOS.
-All rights reserved.
+
 
